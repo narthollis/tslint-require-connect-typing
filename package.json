@@ -1,0 +1,26 @@
+{
+  "name": "tslint-require-connnect-typing",
+  "version": "1.0.0",
+  "description": "tslint rule to require typing of react-redux connect statements",
+  "keywords": [
+    "tslint",
+    "typescript",
+    "react-redux"
+  ],
+  "main": "tslint.json",
+  "repository": {},
+  "author": "Nicholas Steicke <narthollis+npm@narthollis.net>",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "npm-run-all": "^4.0.1",
+    "rimraf": "^2.5.4",
+    "tslint": "^4.4.2",
+    "typescript": "^2.2.0"
+  },
+  "scripts": {
+    "test": "npm-run-all build test-rules",
+    "test-rules": "tslint --test test/**/* --rules-dir dist/",
+    "build": "tsc -p ./",
+    "clean": "rimraf dist/*"
+  }
+}

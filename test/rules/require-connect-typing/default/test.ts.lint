@@ -1,0 +1,49 @@
+import { connect } from 'react-redux';
+
+let x = connect()();
+        ~~~~~~~~~ [React Redux connect function must be typed.]
+
+function mapStateToProps(state: S): S {
+    return state;
+}
+
+function dispatchProps(): D {
+    return { a: () => {} );
+}
+
+function mergeProps(stateProps: S, dispatchProps: D, ownProps: O): P {
+}
+
+
+let x = connect(mapStateToProps)(Component);
+        ~~~~~~~~~~~~~~~~~~~~~~~~ [React Redux connect function must be typed.]
+
+let x = connect(mapStateToProps, {})(Component);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [React Redux connect function must be typed.]
+
+let x = connect(mapStateToProps, dispatchProps)(Component);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [React Redux connect function must be typed.]
+
+let x = connect(mapStateToProps, {}, mergeProps)(Component);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [React Redux connect function must be typed.]
+
+let x = connect(mapStateToProps, dispatchProps, mergeProps)(Component);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [React Redux connect function must be typed.]
+
+let x = connect<S, D, O>()(Component);
+
+let x = connect();
+        ~~~~~~~~~ [React Redux connect function must be typed.]
+
+let y = x();
+
+let x = connect<S, D, O>();
+
+let s = success();
+
+import { connect as c } from 'react-redux';
+
+let x = c()();
+        ~~~ [React Redux connect function must be typed.]
+
+let x = c<S, D, O>()();
