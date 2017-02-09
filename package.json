@@ -25,6 +25,7 @@
     "prepublish": "npm-run-all clean build test-rules"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "test/"
   ]
 }
