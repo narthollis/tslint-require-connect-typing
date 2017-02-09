@@ -1,6 +1,6 @@
 {
   "name": "tslint-require-connnect-typing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tslint rule to require typing of react-redux connect statements",
   "keywords": [
     "tslint",
